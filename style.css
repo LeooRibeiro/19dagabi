@@ -26,7 +26,7 @@
 @media screen and (max-width: 1080px) {
     body {
         background: var(--bluelight);
-        height: 100%;
+        height: 100vh;
         font-family: 'Poppins';
         display: flex;
         flex-direction: column;
@@ -43,7 +43,7 @@
       background-image: url(./img/michelle-francisca-lee-28K-hb0r_sM-unsplash.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 100%;
+      background-size: 700;
     }
 
     header .img-redonda {
