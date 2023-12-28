@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/* Color Theme Swatches in Hex */
+/* .Cópia-de-feliz-aniversario-1-hex { color: #06273D; }
+.Cópia-de-feliz-aniversario-2-hex { color: #A60F28; }
+.Cópia-de-feliz-aniversario-3-hex { color: #F12A17; }
+.Cópia-de-feliz-aniversario-4-hex { color: #FFFFE2; }
+.Cópia-de-feliz-aniversario-5-hex { color: #F4C628; } */
+
+:root {
+  --background-escuro: #0d143b;
+  --bluelight: #5cbae6;
+  --vermelho-escuro: #A60F28;
+  --vermelho-vivo: #F12A17;
+  --branco-grey: #f0f0f0;
+  --gold: #F4C628;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        background: var(--bluelight);
+        height: 100%;
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+      width: 100%;
+      height: 450px;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(./img/michelle-francisca-lee-28K-hb0r_sM-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 700px;
+    }
+
+    header .img-redonda {
+      width: 140px;
+      height: 140px;
+      margin: 75px auto 0px 125px;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin: 30px 0px;
+      color: var(--branco-grey);
+      text-shadow: 2px 2px 5px #0d143b;
+    }
+
+    h1 span {
+      color: var(--gold);
+      text-shadow: 2px 2px 5px #0d143b;
+    }
+
+    /* Estilos para a barra de navegação das tabs */
+    .tab-bar {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: space-around;
+        background-color: var(--branco-grey);
+        padding: 20px 10px;
+
+      }
+  
+      /* Estilos para cada tab */
+      .tab {
+        position: relative;
+        cursor: pointer;
+        padding: 8px 8px;
+        margin: 0px 5px;
+        box-shadow: 1px 1px 5px #0d143b;
+        font-weight: 500;
+        border-radius: 8px;
+      }
+
+      .tab:hover {
+        background: var(--bluelight);
+      }
+  
+      /* Estilos para o conteúdo das tabs */
+      .tab-content {
+        display: none;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        background-image: url(./img/todd-trapani-QldMpmrmWuc-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 500px;
+        text-shadow: 2px 2px 5px #0d143b;
+      }
+
+      .tab-content h2 {
+        color: var(--branco-grey);
+      }
+
+      .tab-content h2 span {
+        color: var(--gold);
+        text-shadow: 1px 1px 6px #575757;
+      }
+
+      .tab-content p {
+        color: var(--branco-grey);
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px #0d143b;
+      }
+
+          /* Estilos para a seção que aparece ao rolar */
+    .scroll-section {
+       height: 1300px;
+        display: none;
+        margin: 0px auto;
+        padding: 20px;
+        background-color: #78d3d8;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      .scroll-section p {
+        color: var(--branco-grey);
+        text-shadow: 2px 2px 5px #0d143b;
+        font-weight: 700;
+      }
+
+      .scroll-section h2 {
+        font-weight: 700;
+        color: var(--branco-grey);
+        text-shadow: 2px 2px 5px #0d143b;
+        margin-bottom: 10px;
+      }
+
+      .scroll-section .p-title {
+         font-size: 1.1rem;
+         margin: 15px auto;
+         color: var(--branco-grey);
+         text-shadow: 2px 2px 5px #0d143b;
+      }
+
+      .scroll-section .p-shaka {
+        margin: 15px;
+        font-style: italic;
+        color: var(--branco-grey);
+        text-shadow: 2px 2px 5px #0d143b;
+      }
+
+      /* final section */ 
+
+    .final-section {
+      display: none;
+      width: 100%;
+      height: 400px;
+      background-image: url(./img/yair-mejia-oO62CP-g1EA-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 800px;
+      position: relative;
+      padding: 25px;
+    }
+
+    .final-section h3 {
+      color: var(--branco-grey);
+      text-shadow: 2px 2px 5px #0d143b;
+    }
+
+    .final-section p {
+      color: var(--branco-grey);
+      text-shadow: 2px 2px 5px #0d143b;
+    }
+
+      /* Estilos para o carrossel */
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+      }
+  
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+  
+      .carousel-item img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      /* card final */
+      .container {
+        margin: 0px auto 30px auto;
+      }
+      
+      .card {
+        display: block;
+        padding: 20px;
+        position: relative;
+        width: 200px;
+        height: 300px;
+        margin: 30px auto;
+        background-image: url(./img/fotoMeio.jpg);
+        background-position: cover;
+        background-size: 200px;
+        border-radius: 15px;
+        box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+      }
+      
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .face.back {
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      
+      .face.back b {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .face.back .desc {
+        background-color: var(--branco-grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .face.front {
+        transition: 0.5s;
+      }
+      
+      .face.front b {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+        font-size: 1.2em;
+        color: var(--branco-grey);
+        transition: 0.5s;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+      }
+      
+      .card:hover .face.front {
+        height: 60px;
+      }
+      
+      .card:hover .face.front b {
+        font-size: .8em;
+      }
+      
+      .face.front {
+        background-color: rgb(41, 99, 187);
+        border-radius: 15px;
+      }
+    
+}
